@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navigation Menu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            position: fixed;
+            width: 100%;
+            background-color: #2c3e50;
+            color: white;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            transition: background-color 0.3s;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            margin: 0;
+            padding: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #1abc9c;
+        }
+
+        .content {
+            margin-top: 60px;
+        }
+
+        section {
+            padding: 60px;
+            height: 100vh;
+        }
+
+        #home {
+            background-color: #ecf0f1;
+        }
+
+        #about {
+            background-color: #bdc3c7;
+        }
+
+        #services {
+            background-color: #95a5a6;
+        }
+
+        #contact {
+            background-color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <section id="home">
+            <h1>Home Section</h1>
+            <p>Welcome to the home section.</p>
+        </section>
+        <section id="about">
+            <h1>About Section</h1>
+            <p>Learn more about us.</p>
+        </section>
+        <section id="services">
+            <h1>Services Section</h1>
+            <p>Discover our services.</p>
+        </section>
+        <section id="contact">
+            <h1>Contact Section</h1>
+            <p>Get in touch with us.</p>
+        </section>
+    </div>
+    <script>
+        window.addEventListener('scroll', function() {
+            var navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.style.backgroundColor = '#34495e';
+            } else {
+                navbar.style.backgroundColor = '#2c3e50';
+            }
+        });
+    </script>
+</body>
+</html>

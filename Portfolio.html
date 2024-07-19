@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapil Maheshwari | Web Developer Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #4CAF50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header h2 {
+            margin: 10px 0 0;
+            font-weight: 300;
+            font-size: 1.2em;
+        }
+
+        section {
+            padding: 20px 0;
+            border-bottom: #eee 1px solid;
+        }
+
+        #about .profile-pic {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #f9f9f9;
+            margin: 5px 0;
+            padding: 10px;
+            border: #ccc 1px solid;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .skills div {
+            background: #f4f4f4;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 5px;
+            flex: 1 1 200px;
+            text-align: center;
+        }
+
+        .skills div:hover {
+            background: #e4e4e4;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            header h2 {
+                font-size: 1em;
+            }
+
+            .skills {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .skills div {
+                flex: none;
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Kapil Maheshwari</h1>
+            <h2>Crafting Digital Experiences with Precision and Passion</h2>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="C:\Users\Kapil Maheshwari\Downloads\Kapil.jpg" alt="Kapil Maheshwari" class="profile-pic">
+            <p>I am a BCA student with a rich educational journey that began at OP Jindal School in Raigarh, Chhattisgarh, and continues at Christ University in Bangalore. Throughout my academic career, I've been committed to excellence, both in and out of the classroom.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>JavaScript</div>
+                <div>Node.js</div>
+                <div>SQL</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <ul>
+                <li>OP Jindal School, Raigarh, Chhattisgarh</li>
+                <li>Christ University, Bangalore</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2>Professional Experience</h2>
+            <ul>
+                <li>Literary Secretary in 10th, 11th, and 12th grades</li>
+                <li>Volunteer for Blossoms and InBlooms</li>
+                <li>Event Head for Interface, a national IT fest organized by the Computer Science department of the University</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <div class="container">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Reading Books</li>
+                <li>Watching Movies</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Let's connect and create something amazing together. Reach out to me at <a href="mailto:kapilkm0111@gmail.com">kapilkm0111@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
